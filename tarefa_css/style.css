@@ -23,16 +23,18 @@
 .foto{
     width: 200px;
     height: 250px;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 4%;
 }
 
 main{
-    display: flex;           /* coloca os filhos lado a lado */
-    justify-content: center; /* centraliza horizontalmente */
-    gap: 20px;               /* espaçamento entre os itens */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
     margin-top: 8%;
 }
 
 body{
-    background-color: rgb(230, 229, 210);
+    background-color: rgb(233, 233, 228);
 }
