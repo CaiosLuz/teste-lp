@@ -1,0 +1,38 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(94, 94, 94);
+    text-align: center;
+    color: white;
+}
+
+.rodape{
+    background-color: rgb(94, 94, 94);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.foto{
+    width: 200px;
+    height: 250px;
+}
+
+main{
+    display: flex;           /* coloca os filhos lado a lado */
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 20px;               /* espaçamento entre os itens */
+    padding: 20px;
+    margin-top: 8%;
+}
+
+body{
+    background-color: rgb(230, 229, 210);
+}
