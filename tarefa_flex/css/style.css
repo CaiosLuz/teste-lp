@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(255, 254, 199);
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    border: solid 15px rgb(76, 139, 212);
+}
+
+
+.fase1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fase2{
+    display: flex;
+    justify-content: center;
+}
+
+.fase3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fase4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fase5{
+    display: flex;
+    align-items: flex-end;
+    height: 97vh;
+}
+
+.fase6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+.fase7{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 97vh;
+}
