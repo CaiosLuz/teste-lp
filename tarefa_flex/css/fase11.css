@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(242, 253, 173);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 97vh;
+}
+
+#gato{
+    border-radius: 50%;
+    width: 150px;
+    border: solid 15px rgb(148, 110, 22);
+}
+
+#cavalo{
+    border-radius: 50%;
+    width: 150px;
+    border: solid 15px rgb(148, 110, 22);
+}
+
+#camelo{
+    border-radius: 50%;
+    width: 150px;
+    border: solid 15px rgb(148, 110, 22);
+}

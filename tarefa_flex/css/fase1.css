@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(242, 253, 173);
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 50%;
+}
+
+img{
+    border-radius: 50%;
+    border: solid 25px rgb(148, 110, 22);
+}
