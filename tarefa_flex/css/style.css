@@ -76,6 +76,7 @@ img{
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
+    justify-content: space-between;
     height: 97vh;
 }
 
@@ -90,4 +91,108 @@ img{
 .fase14{
     display: flex;
     order: 1;
+}
+
+.fase15{
+    display: flex;
+    order: 1;
+}
+
+.fase15 .cavalo{
+    order: 1;
+}
+
+.fase15 .gato{
+    order: 2;
+}
+
+.fase16{
+    display: flex;
+    align-items: flex-start;
+    height: 97vh;
+}
+
+.fase16 .cavalo{
+    align-self: flex-end;
+}
+
+.fase17{
+    display: flex;
+    align-items: flex-start;
+    height: 97vh;
+}
+
+.fase17 .cavalo{
+    align-self: flex-end;
+    order: 2;
+}
+
+.fase18{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fase19{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 97vh;
+}
+
+.fase20{
+    display: flex;
+    flex-flow: column wrap;
+    height: 97vh;
+}
+
+.fase21{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.fase22{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    height: 97vh;
+}
+
+.fase23{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column-reverse;
+    align-content: center;
+    height: 97vh;
+}
+
+.fase24{
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;
+    align-content: space-between;
+    justify-content: center;
+    height: 97vh;
+}
+
+.fasesHome{
+    display: flex;
+    font-size: 30px;
+    height: 60vh;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+a{
+    border-radius: 30px;
+    padding: 18px;
+    color: black;
+    list-style: none;
+    background-color: rgb(76, 139, 212);
+    margin-bottom: 20px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: black;
 }
