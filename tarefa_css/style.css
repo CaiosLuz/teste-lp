@@ -38,3 +38,11 @@ main{
 body{
     background-color: rgb(233, 233, 228);
 }
+
+.accordion{
+    margin-bottom: 20px;
+}
+
+main{
+    margin-bottom: 10%;
+}
