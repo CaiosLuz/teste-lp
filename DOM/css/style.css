@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(185, 241, 248);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linhaBTN{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
+    border-radius: 16px;
+    border: none;
+    background-color: rgb(180, 0, 0);
+    color: whitesmoke;
+    padding: 7px;
+}
+
+.tituloCor{
+    color: rgb(71, 104, 63);
+}
