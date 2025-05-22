@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Animal</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Lista de Animais</h1>
+    <ul id="animal-list"></ul>
+
+    <button id="add-animal-btn">Cadastrar Animal</button>
+
+    <script>
+        const apiUrl = 'https://682e5e0b746f8ca4a47cca02.mockapi.io/animal';
+
+        function fetchAnimals() {
+            axios.get(apiUrl)
+                .then(response => {
+                    const animals = response.data;
+                    const animalList = document.getElementById('animal-list');
+                    animalList.innerHTML = '';
+
+                    animals.forEach(animal => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = `${animal.id} - ${animal.name} (${animal.idade} anos) - Raça: ${animal.raca}`;
+                        animalList.appendChild(listItem);
+                    });
+                })
+                .catch(error => console.error('Erro ao buscar animais:', error));
+        }
+
+        function addAnimal() {
+            const newAnimal = {
+                name: 'Totó',
+                idade: 12,
+                raca: 'Cachorro'
+            };
+
+            axios.post(apiUrl, newAnimal)
+                .then(response => {
+                    alert('Animal cadastrado com sucesso!');
+                    fetchAnimals();
+                })
+                .catch(error => console.error('Erro ao cadastrar animal:', error));
+        }
+
+        window.onload = fetchAnimals;
+
+        document.getElementById('add-animal-btn').addEventListener('click', addAnimal);
+    </script>
+</body>
+</html>
